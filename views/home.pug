@@ -1,0 +1,294 @@
+//- extends base template blueprint
+
+extends base.pug            
+
+//- here javascript source
+
+block scripts
+    script(src="/static/javascript.js")
+
+//- here css styling sheets source
+block style
+    style
+      include ../static/css styling sheets/home-style.css
+
+//- body content goes here
+
+    home section
+block content
+  <section id="body-sec">
+        <div id="div-one">
+            <p class="para">HAVE A GOOD TIME WITH FRESH BURGERS</p>
+            <h3 id="big-text">Come to our restaurant</h3>
+            <p class="para-2">the high profile restaurant bar and cafe build for your happines to come together and enjoy</p>
+            <p id="paras">enjoy</p>
+            <button class="btn-2">ORDER NOW</button>
+            <hr>
+        </div>
+  </section> 
+
+
+    //- addrees section
+  <section id="txt-animation">
+        <div id="inner-txt-social">
+            <div id="ln-1">
+                <img src="static/home-logos/call.png" alt="">
+                <h3>999 (345) 876 9870</h3>
+                <p> providing 24/7 service without </p>
+                <p> extra charges </p>
+                </p>
+            </div>
+
+
+            <div id="ln-2">
+                <img src="static/home-logos/target.png" alt="">
+                <h3>41 west southaal street</h3>
+                <p> 21-D new york NY colony </p>
+                <p>8019</p>
+            </div>
+
+
+            <div id="ln-3">
+                <img src="static/home-logos/clock.png" alt="">
+                <h3>opens monday-friday</h3>
+                <p> 8:00 a.m-10:00 p.m</p>
+            </div>
+        </div>
+
+        <div id="social-icon">
+            <div id="inner-pic">
+
+                <div id="icon-1">
+                    <a href="#">
+                        <img src="static/home-logos/twitter.png" alt="">
+                    </a>
+                </div>
+
+                <div id="icon-2">
+                    <a href="#">
+                        <img src="static/home-logos/facebook.png" alt="">
+                    </a>
+                </div>
+
+                <div id="icon-3">
+                    <a href="#">
+                        <img src="static/home-logos/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+  </section>
+
+    //- menu section
+  <section id="menu-sec">
+        <h1>OUR SERVICE YOUR SATISFACTION....</h1>
+        <div id="img-section">
+            <img src="static/home/menu-1-img.jpg" alt="menu-1-img here" class="zoom">
+        </div>
+        <div id="menu-text-section">
+            <h1 class="text-highlight"><a href="#">Fresh Atmosphere</a></h1>
+            <p>A hamburger also burger for short is a sandwich consisting </p>
+            <p>The patty may be pan fried grilled smoked fried </p>
+            <p>Hamburgers are often served with cheese </p>
+            <p>The term "burger" can also be applied</p>
+        <button class="btn-2" id="menu-btn" onclick="Hide()">View more</button>
+        </div>
+        
+        
+  </section>
+
+            //- set second food menu section
+  <section>
+        <div id="align-verticle">
+            <div class="image-section-2">
+                <img src="static/home/menu-2-img.jpg" alt="menu-2-img here" class="zoom">
+            </div>
+            <div class="menu-text-pos" id="maintain-text">
+                <h1 class="text-highlight"><a href="#">Itallic special</a></h1>
+                <p>A hamburger also burger for short is a sandwich consisting </p>
+                <p>The patty may be pan fried grilled smoked fried </p>
+                <p>Hamburgers are often served with cheese </p>
+                <p>The term "burger" can also be applied</p>
+                <button class="btn-2" id="menu-btn">View more</button>
+            </div>
+        </div>
+  </section>
+
+        //- set third menu food section 
+  <section>
+        <div id="img-section-3" class="bordershadow">
+            <img src="static/home/menu-3-img.jpg" alt="menu-3-img here" class="zoom">
+        </div>
+        <div id="menu-text-section-2">
+            <h1 class="text-highlight"><a href="#">Brewery system</a></h1>
+            <p>A hamburger also burger for short is a sandwich consisting </p>
+            <p>The patty may be pan fried grilled smoked fried </p>
+            <p>Hamburgers are often served with cheese </p>
+            <p>The term "burger" can also be applied</p>
+            <button class="btn-2" id="menu-btn">View more</button>
+        </div>
+  </section>
+
+  
+        //- show text slide section
+  <section id="menu-item-3">
+        <div id="cover">
+            <img src="static/others/cover-img.jpg" alt="" height="300" width="100%">
+        </div>
+        <div id="cover2">
+        //- blank division
+        </div>
+        <div id="parent">
+            <div id="box1">
+                <h1 id="center-main">Our Serving</h1>
+                <p class="main">here is the best management team that take care of your all needs</p>
+                <p class="main">and serving best food of the world that </p>
+                <p class="main">refresh your happines</p>
+            </div>
+            <div id="box2">
+                <h1 id="center-main">Our Management Team</h1>
+                <p class="main">here is the best management team that take care of your all needs</p>
+                <p class="main">and serving best food of the world that </p>
+                <p class="main">refresh your happines</p>
+            </div>
+            <div id="box3">
+                <h1 id="center-main">Our Friendly Staff</h1>
+                <p class="main">here is the best management team that take care of your all needs</p>
+                <p class="main">and serving best food of the world that </p>
+                <p class="main">refresh your happines</p>
+            </div>
+        </div>
+  </section>
+
+
+        //- sonsor section
+  <section id="sponsors">
+        <div id="sponsor-text">
+            <h3>OUR SPONSORS</h3>
+        </div>
+        <div id="sponsor-center">
+            <a href="#">
+                <img src="static/sponser-logo/sponsor-logo-1.png" alt="">
+            </a>
+
+            <a href="#"></a>
+            <img src="static/sponser-logo/sponsor-logo-2.png" alt="" id="spn2">
+            </a>
+
+            <a href="#">
+                <img src="static/sponser-logo/sponsor-logo-3.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="static/sponser-logo/sponsor-logo-4.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="static/sponser-logo/sponsor-logo-5.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="static/sponser-logo/sponsor-logo-6.png" alt="" id="spn6">
+            </a>
+        </div>
+  </section>
+
+
+        //- footer section
+  <section id="container-final">
+        <div id="foot-text">
+            <h3>CONTACT US</h3>
+        </div>
+
+            //- set social logos 
+        <div id="social-logo">
+            <a href="#">
+                <img src="static/footer-logo/foot-img-1.png" alt="" id="logo-png1">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-2.png" alt="" id="logo-png2">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-3.png" alt="" id="logo-png3">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-4.png" alt="" id="logo-png4">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-5.png" alt="" id="logo-png5">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-6.png" alt="" id="logo-png6">
+            </a>
+        </div>
+
+        <div id="form">
+            <div id="products">
+                <h3>PRODUCTS</h3>
+                <h4>Italian special</h4>
+                <h4>Thai food</h4>
+                <h4>Indian food</h4>
+                <h4>continental</h4>
+                <h4>deserts</h4>
+            </div>
+
+            <div id="about">
+                <h3>ABOUT</h3>
+                <h4>Catering</h4>
+                <h4>delivery</h4>
+                <h4>Contact</h4>
+                <h4>Restourant</h4>
+                <h4>Blog</h4>
+
+            </div>
+
+            <div id="support">
+                <h3>SUPPORT</h3>
+                <h4> Our Policy</h4>
+                <h4>terms & Conditions</h4>
+                <h4>FAQs</h4>
+                <h4>Financial</h4>
+            </div>
+
+
+                //- set form body 
+            <div id="form-inner">
+                <form action="">
+                    <h3>Login</h3>
+                    <div class="input-main">
+                        <input type="text" placeholder="Enter name" id='name'>
+                    </div>
+                    <div class="input-main">
+                        <input type="input-main" placeholder="Enter password" id='password'>
+                    </div>
+                    <div id="btn-foot">
+                        <button>Sign in</button>
+                    </div>
+                </form>
+
+                    //- set contact info logos 
+                <div id="address">
+                    <img src="static/footer-logo/call.png" alt="" id="foot-logo-1">
+                    <img src="static/footer-logo/target.png" alt="" id="foot-logo-2">
+                    <img src="static/footer-logo/clock.png" alt="" id="foot-logo-3">
+                </div>
+
+            </div>
+                //- set contact info text 
+            <div id="address-info">
+                <h3>+999 (345) 876 9870</h3>
+                <h3> 21-D new york NY colony</h3>
+                <h3>Opens monday-friday</h3>
+            </div>
+        </div>
+  </section>
+
+        //- set copyright 
+  <footer>
+    <h4>&copy; Copmpany copyright-2019 josan'z food - All Rights Reserved.</h4>
+  </footer>

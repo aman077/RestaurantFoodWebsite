@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set body default setting */
+body {
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* navbar making */
+#navbar {
+    background-color: black;
+    height: 74px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#unlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 342px;
+}
+
+#unlist li {
+    list-style: none;
+    padding: 25px 13px;
+
+}
+
+#unlist li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-family: 'Baloo Chettan 2', cursive;
+    padding-left: -9px;
+    transition: all 0.5s;
+}
+
+/* set background delivery image in body section using pseudo selector */
+#navbar::before {
+    content: "";
+    background: url('static/delivery - img/deliver-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+}
+
+#unlist li a:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+/* set searchbar */
+#search {
+    position: absolute;
+    top: 3px;
+    right: -11px;
+    padding-right: 19px;
+}
+
+#text {
+    margin: 25px 1px;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* set search button  */
+.btn {
+    cursor: pointer;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-family: 'Cinzel', serif;
+    background-color: rgba(207, 0, 0, 0.603);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(143, 3, 3, 0.616);
+}
+
+/* set navbar food logo  */
+#logo {
+    position: absolute;
+    top: -6px;
+    left: 27px;
+    padding: 16px 5px;
+}
+
+#logo img {
+    filter: invert(1);
+    height: 53px;
+    width: 54px
+}
+
+/* set body highlight text in body section  */
+#big-text {
+    font-size: 50px;
+    position: absolute;
+    top: 217px;
+    left: 585px;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: white;
+}
+
+/* set opacity of restourant background image */
+#body-sec::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.500);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    background-blend-mode: darken;
+    z-index: -1;
+}
+
+/* set order now button  */
+.btn-2 {
+    margin: 38px 55px;
+    padding: 15px 29px;
+    cursor: pointer;
+    border: none;
+    border-radius: 53px;
+    position: absolute;
+    top: 250px;
+    left: 566px;
+    font-size: 13px;
+    font-family: 'Cinzel', serif;
+    background-color: rgba(207, 0, 0, 0.603);
+    color: white;
+    transition: all 0.4s;
+}
+
+.btn-2:hover {
+    background-color: rgba(255, 6, 6, 0.705);
+    transform: scale(1.0500);
+}
+
+/* set title of food menu  */
+#menu-font {
+    color: white;
+    position: absolute;
+    top: 89%;
+    left: 41%;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(51, 51, 51, 0.788);
+}
+/* set delivery menus  */
+#deliver-menu {
+    height: 400px;
+    width: 100vw;
+    position: relative;
+    top: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.deliver-center {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 91px;
+    transition: all 0.2s linear;
+}
+
+/* set shadow and gradient property on hoverable menus  */
+.deliver-center:hover {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.562), rgba(131, 131, 131, 0));
+    box-shadow: 4px 4px 5px rgba(29, 29, 29, 0.836);
+    cursor: pointer;
+
+}
+
+/* set other delivery menu settings  */
+#delivery-menu-2 {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    top: 1166px;
+}
+
+/* delivery images position  */
+.deliver-center img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+/* delivery text styling  */
+.deliver-center a {
+    text-decoration: none;
+    line-height: 39px;
+    font-family:'Baloo Chettan 2', cursive;
+}
+
+/* styling of food title heading */
+.deliver-center h3 {
+    text-decoration: none;
+    line-height: 39px;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: rgba(207, 0, 0, 0.788);
+}
+
+/* styling delivery paragrapg text  */
+.deliver-center p {
+    font-family: 'Baloo Chettan 2', cursive;
+    color: rgba(29, 29, 29, 0.836);
+
+}
+
+/* set advertisement animation picture slideshow  */
+#advertise{
+    height: 457px;
+    width: 100%;
+    position: absolute;
+    top: 290%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 70px;
+    font-family: 'Baloo Chettan 2', cursive;
+    animation: all 20s ease;
+}
+
+/* set animation backgroung images properties using pseudo selector */
+#advertise::before{
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation-name: fadeOut;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* insert pictures in keyframe setting for animation  */
+@keyframes fadeOut{
+    10%{
+        background-image: url('static/advertise/advertise-1.jpg');  
+    }
+
+    33%{
+        background-image: url('static/advertise/advertise-2.jpg');
+    }
+
+    77%{
+        background-image: url('static/advertise/advertise-5.jpg');
+    }
+
+    100%{
+        background-image: url('static/advertise/advertise-4.jpg');
+    }
+}
+
+
+/* set footer  */
+#container-final{
+    height: 400px;
+    width: 100vw;
+    background-color: rgb(51, 50, 50);
+    position: relative;
+    top: 1848px;
+}
+
+#foot-text{
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* set social logos with flex property to align center */
+#social-logo{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#social-logo img{
+    height: 40px;
+    width: 40px;
+    margin: 0px 7px;
+    border-radius: 46px;
+    box-shadow: 1px 4px 3px rgb(24, 24, 24);
+    transition: transform 0.2s;
+}
+#social-logo img:hover{
+   transform: scale(1.2);
+}
+
+
+/* set form to align center   */
+#form{
+    height: 250px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form #form-inner h3{
+    color: white;
+    position: relative;
+    top: -19px;
+    border-bottom: 2px solid red;
+    width: 67px;
+    font-size: 28px;
+
+}
+
+.input-main input{
+    
+    margin: 3px -3px;
+    padding: 10px 35px;
+    border-radius: 6px;
+    border: none;
+}
+
+#btn-foot button{
+    margin: 4px 0px;
+    padding: 8px 32px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.780);
+    color: white;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1) 2s;
+    
+}
+
+
+#btn-foot button:hover{
+    
+    background-color: rgb(158, 9, 9);
+    cursor: pointer;
+
+}
+
+#form #form-inner #address{
+    height: 200px;
+    width: 288px;
+    position: absolute;
+    top: 169px;
+    right: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+/* set contact info logos  */
+#form #form-inner #address #foot-logo-1{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+   
+}
+
+#form #form-inner #address #foot-logo-2{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+   
+}
+
+#form #form-inner #address #foot-logo-3{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+   
+}
+
+#address-info{
+    color: white;
+}
+
+/* set logos position */
+#address-info :nth-child(1){
+    position: absolute;
+    top: 200px;
+    right: 168px;
+
+}
+
+#address-info :nth-child(2){
+    position: absolute;
+    top: 258px;
+    right: 110px;
+
+
+}
+
+#address-info :nth-child(3){
+    position: absolute;
+    top: 313px;
+    right: 138px;
+
+}
+
+#form #products{
+    color: white;
+    height: 196px;
+    width: 100px;
+    position: absolute;
+    top: 181px;
+    left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+#form #about{
+    color: white;
+    height: 196px;
+    width: 100px;
+    position: absolute;
+    top: 179px;
+    left: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Baloo Chettan 2', cursive;
+    
+
+}
+#form #support{
+    color: white;
+    height: 172px;
+    width: 100px;
+    position: absolute;
+    top: 179px;
+    left: 363px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Baloo Chettan 2', cursive;
+    
+
+}
+
+#form #products h3,#form #about h3,#form #support h3{
+    border-bottom: 2px solid red;
+    width: 79px;
+}
+
+#form #products h4,#form #about h4,#form #support h4{
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+ /* set copyright */
+footer{
+    color: black;
+    position: relative;
+    top: 1854px;
+    left: 495px;
+}
+

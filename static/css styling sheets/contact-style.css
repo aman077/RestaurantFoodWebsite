@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* body default setting  */
+body {
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* navbar making  */
+#navbar {
+    background-color: black;
+    height: 74px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#unlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 342px;
+}
+
+#unlist li {
+    list-style: none;
+    padding: 25px 13px;
+
+}
+
+#unlist li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-family: 'Baloo Chettan 2', cursive;
+    padding-left: -9px;
+    transition: all 0.5s;
+}
+
+/* set background image in body section using pseudo selector */
+#navbar::before {
+    content: "";
+    background: url('static/others/contact-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+}
+
+#unlist li a:hover{
+    color: red;
+    transform: scale(1.1);
+}
+
+/* set searchbar  */
+#search {
+    position: absolute;
+    top: 3px;
+    right: -11px;
+    padding-right: 19px;
+}
+
+#text {
+    margin: 25px 1px;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* set searchbutton  */
+.btn {
+    cursor: pointer;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Baloo Chettan 2', cursive;
+    background-color: rgba(207, 0, 0, 0.603);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(143, 3, 3, 0.616);
+}
+
+/* set fodd logo on navbar  */
+#logo {
+    position: absolute;
+    top: -6px;
+    left: 27px;
+    padding: 16px 5px;
+}
+
+#logo img {
+    filter: invert(1);
+    height: 53px;
+    width: 54px
+}
+
+/* set highlighted text on top body section  */
+#big-text {
+    font-size: 50px;
+    position: absolute;
+    top: 245px;
+    left: 569px;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: white;
+}
+
+/* set background image opacity  */
+#body-sec::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.500);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    background-blend-mode: darken;
+    z-index: -1;
+}
+
+/* set register font on top of the form  */
+#register {
+    position: absolute;
+    top: 86%;
+    left: 38%;
+    font-size: 40px;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: white;
+    text-shadow: 0px 2px 3px rgba(29, 29, 29, 0.856);
+
+}
+
+/* set form position and align center using flex property */
+#contact {
+    height: 900px;
+    width: 100vw;
+    position: absolute;
+    top: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* align form contents center and set position  */
+#contact #form-box {
+    height: 700px;
+    width: 50%;
+    background-color: rgba(39, 39, 39, 0.993);
+    position: relative;
+    top: -56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* set form input tags property  */
+#contact #form-box input {
+    width: 400px;
+    height: 50px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid rgba(207, 0, 0, 0.836);
+    color: white;
+}
+
+/* set height of address input tag */
+#contact #form-box #address {
+    height: 70px;
+}
+
+/* set position of password field  */
+#contact #form-box #password {
+    width: 190px;
+    position: relative;
+    left: -105px;
+}
+
+/* set position of confirm password  */
+#contact #form-box #ConfirmPassword {
+    width: 190px;
+    position: relative;
+    left: 106px;
+    top: -70px;
+}
+
+/* set first-name position  */
+#contact #form-box #FirstName {
+    width: 190px;
+    position: relative;
+    left: -105px;
+    top: 20px;
+}
+
+/* set last-name position  */
+#contact #form-box #LastName {
+    width: 190px;
+    position: relative;
+    left: 106px;
+    top: -50px;
+}
+
+/* set submit button center  */
+#btn1{
+    display: flex;
+    margin: 12px 0px;
+    
+    
+}
+
+/* styling the button  */
+.primary{
+    margin: 0px 8px;
+    padding: 12px 0px;
+    width: 120px;
+    font-family: 'Baloo Chettan 2', cursive;
+    background-color: rgba(207, 0, 0, 0.603);
+    color: white;
+    border: none;
+}
+
+/* hovering button property  */
+.primary:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+/* set advertisement block center using flexbox property and aplly animation property  */
+#advertise{
+    height: 457px;
+    width: 100%;
+    position: absolute;
+    top: 223%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 70px;
+    font-family: 'Baloo Chettan 2', cursive;
+    animation: all 20s ease;
+}
+
+/* apply animation effect on advertisement background-images  */
+#advertise::before{
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation-name: fadeOut;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* set keyframe property on background image inserted  */
+@keyframes fadeOut{
+    10%{
+        background-image: url('static/advertise/advertise-1.jpg');
+        }
+
+    33%{
+        background-image: url('static/advertise/advertise-2.jpg');
+    }
+
+    77%{
+        background-image: url('static/advertise/advertise-5.jpg');
+    }
+
+    100%{
+        background-image: url('static/advertise/advertise-4.jpg');
+    }
+}
+
+/* set footer  */
+#container-final{
+    height: 400px;
+    width: 100vw;
+    background-color: rgb(51, 50, 50);
+    position: relative;
+    top: 1848px;
+}
+
+/* set footer headin font  */
+#foot-text{
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* set social logos  */
+#social-logo{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#social-logo img{
+    height: 40px;
+    width: 40px;
+    margin: 0px 7px;
+    border-radius: 46px;
+    box-shadow: 1px 4px 3px rgb(24, 24, 24);
+    transition: transform 0.2s;
+}
+
+
+#social-logo img:hover{
+transform: scale(1.2);
+}
+
+/* set login form body  */
+#form{
+    height: 250px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form #form-inner h3{
+    color: white;
+    position: relative;
+    top: -19px;
+    border-bottom: 2px solid red;
+    width: 67px;
+    font-size: 28px;
+
+}
+
+.input-main input{
+    
+    margin: 3px -3px;
+    padding: 10px 35px;
+    border-radius: 6px;
+    border: none;
+}
+
+/* styling button 'sign in' */
+#btn-foot button{
+    margin: 4px 0px;
+    padding: 8px 32px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.780);
+    color: white;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1) 2s;
+    
+}
+
+
+#btn-foot button:hover{
+    
+    background-color: rgb(158, 9, 9);
+    cursor: pointer;
+
+}
+
+#form #form-inner #address{
+    height: 200px;
+    width: 288px;
+    position: absolute;
+    top: 169px;
+    right: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+/* set contact info logo  */
+#form #form-inner #address #foot-logo-1{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+   
+}
+
+#form #form-inner #address #foot-logo-2{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+   
+}
+
+#form #form-inner #address #foot-logo-3{
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+   
+}
+
+#address-info{
+    color: white;
+}
+
+/* set contact info logos position  */
+#address-info :nth-child(1){
+    position: absolute;
+    top: 200px;
+    right: 168px;
+
+}
+
+#address-info :nth-child(2){
+    position: absolute;
+    top: 258px;
+    right: 110px;
+
+
+}
+
+#address-info :nth-child(3)
+{
+    position: absolute;
+    top: 313px;
+    right: 138px;
+
+}
+
+#form #products{
+    color: white;
+    height: 196px;
+    width: 100px;
+    position: absolute;
+    top: 181px;
+    left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+#form #about{
+    color: white;
+    height: 196px;
+    width: 100px;
+    position: absolute;
+    top: 179px;
+    left: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Baloo Chettan 2', cursive;
+    
+
+}
+#form #support{
+    color: white;
+    height: 172px;
+    width: 100px;
+    position: absolute;
+    top: 179px;
+    left: 363px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Baloo Chettan 2', cursive;
+    
+
+}
+
+#form #products h3,#form #about h3,#form #support h3{
+    border-bottom: 2px solid red;
+    width: 79px;
+}
+
+#form #products h4,#form #about h4,#form #support h4{
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+/* set copyright  */
+footer{
+    color: black;
+    position: relative;
+    top: 1854px;
+    left: 495px;
+}
+

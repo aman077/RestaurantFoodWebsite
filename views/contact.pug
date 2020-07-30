@@ -1,0 +1,178 @@
+extends base.pug
+
+block scripts
+    script(src="/static/javascript.js")
+
+block style
+     style
+      include ../static/css styling sheets/contact-style.css
+
+block content
+     <section id="body-sec">
+        <div id="div-one">
+            <h3 id="big-text">Contact US</h3>
+        </div>
+     </section>
+
+        //- set form title 
+     <div id="register">
+        <h3>REGISTER NOW</h3>
+     </div>
+
+        //- set registration form 
+     <section id="contact">
+       form(action="/contact" method="post" class="myForm" id="form-box")
+        
+
+            //-   first name input 
+            <div class="box">
+                <input type="text" name="FirstName" id="FirstName" placeholder="Enter Your First Name">
+            </div>
+
+            //-   last name input 
+            <div class="box">
+                <input type="text" name="LastName" id="LastName" placeholder="Enter Your Last Name">
+            </div>
+
+            //-   username input 
+            <div class="box">
+                <input type="text" name="UserName" id="UserName" placeholder="Enter Your Username">
+            </div>
+
+             //-   password input 
+            <div class="box">
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            </div>
+
+             //-   confirm password input 
+            <div class="box">
+                <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Enter Your Password Again">    
+            </div>
+
+            //-   email input 
+            <div class="box">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+
+            //-   phone input 
+            <div class="box">
+                <input type="number" name="phone" id="phone" placeholder="Enter Your Phone">
+            </div>
+
+            //-   address input 
+            <div class="box">
+                <input type="text" name="address" id="address" placeholder="Enter Your Address">
+            </div>
+
+            //-   submit button input 
+            <div id="btn1">
+                <button class="primary">Submit</button>
+            </div>
+      
+       </form> 
+     </section>
+
+        //- set advertisement block 
+     <div id="advertise">
+        
+     </div>
+
+        //- set footer 
+     <section id="container-final">
+        <div id="foot-text">
+            <h3>CONTACT US</h3>
+        </div>
+
+            //- set  social logos 
+        <div id="social-logo">
+            <a href="#">
+                <img src="static/footer-logo/foot-img-1.png" alt="" id="logo-png1">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-2.png" alt="" id="logo-png2">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-3.png" alt="" id="logo-png3">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-4.png" alt="" id="logo-png4">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-5.png" alt="" id="logo-png5">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-6.png" alt="" id="logo-png6">
+            </a>
+        </div>
+
+        <div id="form">
+            <div id="products">
+                <h3>PRODUCTS</h3>
+                <h4>Italian special</h4>
+                <h4>Thai food</h4>
+                <h4>Indian food</h4>
+                <h4>continental</h4>
+                <h4>deserts</h4>
+            </div>
+
+            <div id="about">
+                <h3>ABOUT</h3>
+                <h4>Catering</h4>
+                <h4>delivery</h4>
+                <h4>Contact</h4>
+                <h4>Restourant</h4>
+                <h4>Blog</h4>
+
+            </div>
+
+            <div id="support">
+                <h3>SUPPORT</h3>
+                <h4> Our Policy</h4>
+                <h4>terms & Conditions</h4>
+                <h4>FAQs</h4>
+                <h4>Financial</h4>
+            </div>
+
+                //- set login form body 
+            <div id="form-inner">
+                <form action="">
+                    <h3>Login</h3>
+                    <div class="input-main">
+                        <input type="text" placeholder="Enter name" id='name'>
+                    </div>
+                    <div class="input-main">
+                        <input type="input-main" placeholder="Enter password" id='password'>
+                    </div>
+                    <div id="btn-foot">
+                        <button>Sign in</button>
+                    </div>
+                </form>
+
+                    //- set contact info logos 
+                <div id="address">
+                    <img src="static/footer-logo/call.png" alt="" id="foot-logo-1">
+                    <img src="static/footer-logo/target.png" alt="" id="foot-logo-2">
+                    <img src="static/footer-logo/clock.png" alt="" id="foot-logo-3">
+                </div>
+            </div>
+
+                //- set contact info text 
+            <div id="address-info">
+                <h3>+999 (345) 876 9870</h3>
+                <h3> 21-D new york NY colony</h3>
+                <h3>Opens monday-friday</h3>
+            </div>
+        </div>
+     </section>
+
+        //- set copyright 
+     <footer>
+        <h4>&copy; Copmpany copyright-2019 josan'z food - All Rights Reserved.</h4>
+     </footer>
+
+

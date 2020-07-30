@@ -1,0 +1,195 @@
+extends base.pug
+
+block scripts
+    script(src="/static/javascript.js")
+
+block style
+     style
+      include ../static/css styling sheets/delivery-style.css
+
+block content
+    <section id="body-sec">
+        <div id="div-one">
+            <h3 id="big-text">DELIVERY</h3>
+            <button class="btn-2">ORDER NOW</button>
+        </div>
+    </section>
+
+        //- set food menu font 
+    <div id="menu-font">
+        <h3>FOOD MENU</h3>
+    </div>
+
+     <section id="deliver-menu">
+        //- set delivery menu images and text 
+        <div class="deliver-center">
+            <img src="static/delivery - img/sample-1.jpg" alt="" height="300" width="300">
+            <h3>Snack special</h3>
+            <h4>start - 110/-</h4>
+            <p>Traditionally, snacks are prepared from ingredients commonly </p>
+            <p>at home without a great deal of preparation</p>
+            <p>Snack foods are typically designed to be portable, quick, and satisfying</p>
+            <a href="#">
+                <h3>View more &#8811;</h3>
+            </a>
+        </div>
+
+        <div class="deliver-center">
+            <img src="static/delivery - img/sample-7.jpg" alt="" height="300" width="300">
+            <h3>Soupy noodles</h3>
+            <h4>start - 300/-</h4>
+            <p>Noodles are a type of food made from unleavened dough which</p>
+            <p>is rolled flat and cut, stretched or extruded</p>
+            <p>Instant noodles or instant ramen are noodles sold in a precooked</p>
+            <a href="#">
+                <h3>View more &#8811;</h3>
+            </a>
+        </div>
+        <div class="deliver-center">
+            <img src="static/delivery - img/sample-3.jpg" alt="" height="300" width="300">
+            <h3>Garlic bread</h3>
+            <h4>start - 90/-</h4>
+            <p>It is typically made using a French baguette or sometimes a sourdough like </p>
+            <p>ciabatta which is partially sliced downwards</p>
+            <p>The bread is then stuffed through the cuts with oil and minced garlic</p>
+            <a href="#">
+                <h3>View more &#8811;</h3>
+            </a>
+        </div>
+    </section>
+    <section id="delivery-menu-2">
+        <div class="deliver-center">
+            <img src="static/delivery - img/sample-8.jpg" alt="" height="300" width="300">
+            <h3>Omelete special</h3>
+            <h4>start - 185/-</h4>
+            <p>Omelette recipes A simple omelette with toasted bread makes for the best</p>
+            <p>breakfastb dont you agree? Omelette is a French word that came into world</p>
+            <a href="#">
+                <h3>View more &#8811;</h3>
+            </a>
+        </div>
+        <div class="deliver-center">
+            <img src="static/delivery - img/sample-5.jpg" alt="" height="300" width="300">
+            <h3>Chicken nuggets</h3>
+            <h4>start - 345/-</h4>
+            <p>A chicken nugget is a chicken product made from chicken meat that</p>
+            <p>is breaded or battered, then deep-fried or baked. Invented in the</p>
+            <a href="#">
+                <h3>View more &#8811;</h3>
+            </a>
+        </div>
+        <div class="deliver-center">
+            <img src="static/delivery - img/sample-6.jpg" alt="" height="300" width="300">
+            <h3>Itallian noodles</h3>
+            <h4>start 87/-</h4>
+            <p>Noodles are a type of food made from unleavened dough(maida)</p>
+            <p>which is rolled flat and cut stretched or extruded into long strips </p>
+            <a href="#">
+                <h3>View more &#8811;</h3>
+            </a>
+        </div>
+    </section>
+
+        //- set advertisement division 
+    <div id="advertise">
+        
+     </div>
+
+        //- set footer 
+     <section id="container-final">
+        <div id="foot-text">
+            <h3>CONTACT US</h3>
+        </div>
+             
+            //-  set social logos 
+        <div id="social-logo">
+            <a href="#">
+                <img src="static/footer-logo/foot-img-1.png" alt="" id="logo-png1">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-2.png" alt="" id="logo-png2">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-3.png" alt="" id="logo-png3">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-4.png" alt="" id="logo-png4">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-5.png" alt="" id="logo-png5">
+            </a>
+
+            <a href="#">
+                <img src="static/footer-logo/foot-img-6.png" alt="" id="logo-png6">
+            </a>
+        </div>
+
+        <div id="form">
+            <div id="products">
+                <h3>PRODUCTS</h3>
+                <h4>Italian special</h4>
+                <h4>Thai food</h4>
+                <h4>Indian food</h4>
+                <h4>continental</h4>
+                <h4>deserts</h4>
+            </div>
+
+            <div id="about">
+                <h3>ABOUT</h3>
+                <h4>Catering</h4>
+                <h4>delivery</h4>
+                <h4>Contact</h4>
+                <h4>Restourant</h4>
+                <h4>Blog</h4>
+
+            </div>
+
+            <div id="support">
+                <h3>SUPPORT</h3>
+                <h4> Our Policy</h4>
+                <h4>terms & Conditions</h4>
+                <h4>FAQs</h4>
+                <h4>Financial</h4>
+            </div>
+
+                //- set form body 
+            <div id="form-inner">
+                <form action="">
+                    <h3>Login</h3>
+                    <div class="input-main">
+                        <input type="text" placeholder="Enter name" id='name'>
+                    </div>
+                    <div class="input-main">
+                        <input type="input-main" placeholder="Enter password" id='password'>
+                    </div>
+                    <div id="btn-foot">
+                        <button>Sign in</button>
+                    </div>
+                </form>
+
+                    //- set contact info logos 
+                <div id="address">
+                    <img src="static/footer-logo/call.png" alt="" id="foot-logo-1">
+                    <img src="static/footer-logo/target.png" alt="" id="foot-logo-2">
+                    <img src="static/footer-logo/clock.png" alt="" id="foot-logo-3">
+                </div>
+            </div>
+
+                    //- set contact info text 
+            <div id="address-info">
+                <h3>+999 (345) 876 9870</h3>
+                <h3> 21-D new york NY colony</h3>
+                <h3>Opens monday-friday</h3>
+            </div>
+        </div>
+    </section>
+
+        //- set copyright 
+    <footer>
+        <h4>&copy; Copmpany copyright-2019 josan'z food - All Rights Reserved.</h4>
+    </footer>
+
